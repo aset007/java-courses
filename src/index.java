@@ -1,15 +1,20 @@
-import java.JavaLang;
-import java.MainLang;
-import java.util.jar.JarEntry;
+import java.util.Scanner;
 
-public class index {
-    public static int age;
-    static MainLang mainLang;
+public class Index {
     public static void main(String[] args) {
-        age = 24;
-        String name;
-        String lastName = age == 24 ? "Sanya" : "Lena";
-        name = String.format("%s say : %s", age, lastName);
-        System.out.println(name);
+        Scanner reader = new Scanner(System.in);
+        try {
+            String exit = "no";
+            while (!exit.equals("yes")) {
+                System.out.println("Enter first arg : ");
+                String first = reader.next();
+                System.out.println("Enter second arg : ");
+                String second = reader.next();
+                System.out.println("exit : yes/no ");
+                exit = reader.next().toLowerCase();
+            }
+        } finally {
+            reader.close();
+        }
     }
 }
