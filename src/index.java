@@ -11,14 +11,5 @@ public class index {
         String lastName = age == 24 ? "Sanya" : "Lena";
         name = String.format("%s say : %s", age, lastName);
         System.out.println(name);
-        String somestr = "12";
-        MainLang javaLang = new JavaLang();
     }
-
-     class Animal {
-        protected void GetName(){
-
-        }
-
-}
 }
